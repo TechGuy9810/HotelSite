@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    /* .MainMapContainer{
+        height: 100vh;
+        display: flex;
+        width: 100%;
+        position: fixed;
+        background-color: rgb(222, 222, 222);
+    } */
+    .Maplanding{
+        height: 100vh;
+        display: flex;
+        width: 100%;
+        position: fixed;
+        backdrop-filter: blur(2px) grayscale(1);
+        top: 0;
+        padding: 5%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 7%;
+    }
+    .mapImage{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    @media (max-width:600px) {
+      .Maplanding{
+        padding-top: none;
+      }
+        .mapImage{
+            height: 80%;
+            width: 100%;
+        }
+    }

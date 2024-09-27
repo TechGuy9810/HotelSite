@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+.DetailCloseBtn{
+    display: flex;
+    top: 29%;
+    color: rgb(242, 75, 103);
+    right: 38%;
+    position: fixed;
+    z-index: 9999999;
+    font-size: 1.3vw;
+}
+    .body{
+        display: flex;
+    }
+    .landing{
+        background-color: white;
+        height: 100%;
+        width: 100%;
+    }
+    #child-row, #child-col{
+    margin-left: auto;
+    margin-right: auto;
+    }
+    #container-package1{
+    padding: 0 15%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    }
+    #container-package2{
+        width: 100%;
+        margin-left: auto;
+        padding: 0 15%;
+        margin-right: auto;
+        margin-top: 4vh;
+        }
+
+        .card-Heading{
+            height: 5vw;
+            width: 100%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+        .card-Heading p{
+            width: 97%;
+            justify-content: start;
+            color: black;
+            font-size: 3.5vw;
+            font-weight: 600;
+        }
+        .card-title{
+            font-size: 3vh;
+            font-weight: bold;
+        }
+        #card{
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+            border: none;
+        }
+        #card:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            transition: 0.8s ease;
+        }
+
+.mainContainerSavedHotels{
+    height: 100%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.heartBtn:active{
+    color: rgb(242, 75, 103);
+}
+.heartBtn:focus{
+    color: rgb(242, 75, 103);
+}
+#cardMainLikedHotels{
+    margin-bottom: 2%;
+}
+.mainNoFavoriteContainer{
+    width: 100%;
+    height: 70vh;
+}
+.noFavorite{
+    font-weight: bolder;
+    color: rgb(179, 179, 179);
+    font-size: 4vw;
+}
+@media(max-width: 1200px) {
+            .DetailCloseBtn{
+                display: flex;
+                top: 29%;
+                right: 23%;
+                font-size: 3.4vw;
+            }
+        }
+@media (max-width:600px)
+    {
+        .mainNoFavoriteContainer{
+            width: 100%;
+            height: 75vh;
+        }
+        .noFavorite{
+            font-size: 4vh;
+            font-weight: bolder;
+            color: rgb(179, 179, 179);
+        }
+        #cardMainLikedHotels{
+            margin-bottom: 20px;
+        }
+        .mainContainerSavedHotels{
+            height: 100%;
+            width: 100%;
+            padding-top: 20%;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 0;
+        }
+        .DetailCloseBtn{
+            display: flex;
+            top: 41.5%;
+            right: 10%;
+            font-size: 4vw;
+        }
+        .row2{
+            display: block;
+        }
+        .row3 p{
+            font-size: 1vw;
+        }
+    .main-row-search{
+    display: block;
+    height: 12vw;
+    width: 85%;
+    }
+    .main-col1{
+        width: 100%;
+    }
+    .main-col2{
+        grid-template-columns: 30% 60% 10%;
+    }
+    .card-Heading{
+         height: 8vw;
+    }
+    .card-Heading p{
+        width: 96%;
+        font-size: 8vw;
+    }
+    #container-package1{
+        width: 100%;
+        padding: 5%;
+        margin-top: 1vh;
+        }
+        #container-package2{
+            width: 100%;
+            padding: 5%;
+            margin-top: 0;
+            }
+        #child-row, #child-col{
+            margin-top: 2vw;
+            }
+            #card{
+                box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                border: none;
+            }
+}

@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+.Wish{
+     height: 20%;
+     top: 10%;
+     right: 10%;
+     width: 15%;
+     position: absolute;
+     border: 1px solid black;
+     display: grid;
+     grid-template-rows: 35% 65%;
+     padding: 1%;
+     border-radius: 10px;
+}
+.NumberOfHotelRoom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.NumberOfHotelRoomHeading{
+    font-size: 2vw;
+    color: black;
+    font-weight: bolder;
+}
+.HotelRoomNumber{
+    font-size: 2vw;
+    color: black;
+    font-weight: bolder;
+ }
+.HotelRoomContainer{
+display: grid;
+grid-template-rows: 50% 50%;
+width: 100%;
+flex-direction: column;
+}
+.price{
+    font-size: 1.5vw;
+    font-weight: bolder;
+    margin: 0;
+}
+.HotelBtn{
+    margin: 0;
+    padding: 2% 5%;
+    font-size: 1vw;
+    font-weight: 600;
+    background-color: rgb(242, 75, 103);
+    border-radius: 10px;
+    color: white;
+}
+@media (max-width:600px) {
+
+    .Wish{
+        height: 12%;
+        top: 45%;
+        right: 2%;
+        width: 35%;
+        position: fixed;
+        background-color: white;
+        border: none;
+        display: grid;
+        grid-template-rows: 35% 65%;
+        padding: 2%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   }
+   .NumberOfHotelRoom{
+       width: 100%;
+       display: flex;
+       align-items:start;
+   }
+   .NumberOfHotelRoomHeading{
+       font-size: 5vw;
+       color: black;
+       font-weight: bolder;
+   }
+   .HotelRoomNumber{
+       font-size: 5vw;
+       color: black;
+       font-weight: bolder;
+    }
+   .HotelRoomContainer{
+   display: grid;
+   grid-template-rows: 50% 50%;
+   width: 100%;
+   flex-direction: column;
+   }
+   .price{
+       font-size: 5vw;
+       font-weight: bolder;
+       margin: 0;
+   }
+   .HotelBtn{
+       margin: 0;
+       padding: 2% 5%;
+       font-size: 3.4vw;
+       font-weight: 600;
+       background-color: rgb(242, 75, 103);
+       border-radius: 10px;
+       color: white;
+   }
+}

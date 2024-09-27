@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body-booking{
+   width: 100%;
+   padding: 10vh;
+   min-height: 100vh;
+}
+.card-title{
+    font-size: 4vh;
+    font-weight: 600;
+}
+#CardBody{
+    width: 75%;
+}
+.cardBodyImage{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 45%;
+    align-items: center;
+}
+.cardBodyImage img{
+    width: 100%;
+    object-fit: cover;
+    
+
+}
+.roomNumbersContainer{
+    width: 60%;
+    max-width: 100%;
+    display: flex;
+}
+.roomNumbers{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.roomNumbers p{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+#CardHolder{
+    display: flex;
+    flex-direction: row;
+    width: 22vw;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    box-shadow: none;
+}
+
+.mainNoBookingContainer{
+    width: 100%;
+    height: 100%;
+}
+.noBooking{
+    font-weight: bolder;
+    color: rgb(179, 179, 179);
+    font-size: 4vw;
+}
+@media (max-width:1200px)
+{
+    #CardHolder{
+        width: 50vw;
+    }
+}
+@media (max-width:600px)
+{
+    .noBooking{
+        font-size: 5vh;
+        font-weight: bolder;
+        color: rgb(179, 179, 179);
+    }
+    .roomNumbers{
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+    .roomNumbers p{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    .body-booking{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+    #CardHolder{
+        flex-direction: column;
+        width: 100vw;
+    }
+    #CardBody{
+        width: 100%;
+    }
+}

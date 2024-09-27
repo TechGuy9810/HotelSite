@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.footer-main{
+    display: flex;
+    justify-content: center;
+    height: 30vw;
+    background-Color: black;
+    width: 100%;
+    margin-top: 5%;
+}
+.footer{
+    display: grid;
+    width: 70%;
+    background-Color: black;
+    grid-template-Rows: 20% 70% 10%;
+}
+.brand-logo{
+width: 100%;
+display: flex;
+align-items: center;
+background-Color: black;
+}
+.brand-logo-div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.brand-logo-div p{
+    Color: white;
+    font-size: 2.5vw;
+
+}
+.social-media{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-Color: black; 
+    justify-content: right;
+}
+.social-media-div{
+height: 80%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: right;
+}
+.social-media-div ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.social-media-div ul li{
+    display: flex;
+    align-items: center;
+    padding: 1.5vw;
+}
+.social-media-div ul li a{
+    cursor: pointer;
+    Color: white;
+}
+.Row1{
+    display: grid;
+    width: 100%;
+    grid-template-Columns: 50% 50%;
+    height: 100%;
+}
+.Row2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-Columns: 25% 25% 50%;
+    align-items: center;
+}
+.Row3{
+    display: flex;
+    justify-content: center;
+    background-Color: rgb(0, 0, 0);
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.Col1, .Col2{
+     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+}
+.Col3{
+    width: 100%;
+    display: grid;
+    grid-template-Rows: 40% 30%;
+    height: 100%;
+}
+.Col1 ul, .Col2 ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.Col1 ul li, .Col2 ul li{
+font-size: 1vw;
+font-weight: 600;
+margin-top: 2%;
+margin-bottom: 2%;
+list-style-type: none;
+}
+.Col1 ul li a, .Col2 ul li a{
+    Color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+.Col3-div1{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.Col3-div1 p{
+font-size: 1.5vw;
+Color: white;
+
+}
+.Col3-div2{
+    display: grid;
+    width: 100%;
+    align-items: flex-end;
+    grid-template-Rows: 50% 40%;
+}
+.Col3-div2-div1{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.Col3-div2-div2{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.Col3-div2-div1 input{
+    border: none;
+    box-shadow: none;
+    background-Color: black;
+    border-bottom: 2px solid rgb(242, 75, 103);
+    Color: white;
+}
+.Col3-div2-div2 button{
+    padding: 0.2vw;
+    font-size: 1vw;
+    Color: white;
+    background-Color: rgb(242, 75, 103);
+    border-radius: 5px;
+    width: 20%;
+}
+
+.Row3 p{
+    Color: white;
+    align-items: center;
+}
+@media (max-width:900px)
+{
+    .Col3-div2{
+        gap: 20%;
+        grid-template-Rows: 40% 40%;
+    }
+    .footer{
+        display: grid;
+        width: 70%;
+        grid-template-Rows: 20% 75% 5%;
+        
+    }
+    .Row2{
+        display: grid;
+        grid-template-Rows: 1fr 1fr 1fr;
+        grid-template-Columns: 100%;
+     }
+        .brand-logo-div p{
+            font-size: 3.5vw;
+        }
+        .Row3 p{
+            font-size: 2vw;
+        }
+        .Col3-div2-div2 button{
+            font-size: 2.2vw;
+            border-radius: 5px;
+            width: 30%;
+        }
+        .footer-main{
+            margin-top: 23%;
+            height: 110vw;
+        }
+        .Col3-div1 p{
+            font-size: 2.5vw;
+        }
+        .Col1 ul li, .Col2 ul li{
+            font-size: 1.8vw;
+            }
+}
+@media (max-width:600px)
+{
+    .footer{
+    display: grid;
+    width: 70%;
+    grid-template-Rows: 20% 75% 5%;
+}
+    .brand-logo-div p{
+        font-size: 7vw;
+    
+    }
+    .Col1, .Col2{
+       height: 100%;
+       justify-content: start;
+   }
+   .Col3{
+       height: 100%;
+   }
+   .Col3-div1{
+    height: 100%;
+   }
+   .Col3-div2{
+    height: 100%;
+   }
+    .Row2{
+       display: grid;
+       grid-template-Rows: 35% 35% 30%;
+       grid-template-Columns: 100%;
+    }
+    .Row3 p{
+        font-size: 3.5vw;
+    }
+    .Col3-div2-div2 button{
+        font-size: 4vw;
+    }
+    .footer-main{
+        margin-top: 23%;
+        height: 200vw;
+    }
+    .Col3-div1 p{
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .Col1 ul, .Col2 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 0;
+    }
+    .Col1 ul li, .Col2 ul li{
+        font-size: 3.7vw;
+        font-weight: 500;
+        }
+}

@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+.MainContainer{
+     justify-content: center;
+     display: flex;
+     top: 0;
+     position: fixed;
+     align-items: center;
+     background-color: rgba(0, 0, 0, 0.264);
+     height: 100vh;
+     width: 100vw;
+     z-index: 999;
+}
+.Container{
+background-color: white;
+width: 25vw;
+height: 45vh;
+border-radius: 15px;
+justify-content: center;
+display: grid;
+grid-template-rows: 20% 20% 40% 20%;
+flex-direction: column;
+align-items: center;
+padding: 1%;
+}
+.Person-rooms{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.HeadingContainer{
+    justify-content: center;
+    display: flex;
+}
+.Heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vw;
+}
+.ProcessFurther button{
+    padding: 4% 10%;
+    background-color: rgb(242, 75, 103);
+    border-radius: 10px;
+    color: white;
+}
+.optionsText, .optionCouterButton, .optionCouterNumber{
+    color: #bfbfbf;
+    font-size: 0.9vw
+}
+@media (max-width:1100px)
+{
+    .Heading{
+        font-size: 6vw;
+    }
+    .Container{
+        width: 60vw;
+        height: 45vh;
+        padding: 5%;
+        grid-template-rows: 15% 30% 40% 15%;
+    }
+    .Person-rooms{
+        align-items: start;
+        justify-content: center;
+    }
+    .optionsText, .optionCouterButton, .optionCouterNumber{
+        color: #bfbfbf;
+        font-size: 2.5vw
+    }
+    .ProcessFurther button{
+        padding: 3% 6%;
+        font-size: 3vw;
+        background-color: rgb(242, 75, 103);
+        border-radius: 10px;
+        color: white;
+    }
+}
+@media (max-width: 992px) {
+    .ant-picker-panel:last-child .ant-picker-date-panel {
+      display: none !important;
+    }
+  
+    .ant-picker-panel:first-child
+      .ant-picker-date-panel
+      .ant-picker-header-next-btn,
+    .ant-picker-panel:first-child
+      .ant-picker-date-panel
+      .ant-picker-header-super-next-btn {
+      visibility: initial !important;
+    }
+  
+    .ant-picker-panel.ant-picker-range-wrapper {
+      min-width: 288px !important;
+    }
+  
+    .ant-picker-presets {
+      display: none !important;
+    }
+  }
+@media (max-width:600px)
+{
+    .MainContainer{
+        height: 120vh;
+    }
+    .Heading{
+        font-size: 6vw;
+    }
+    .Container{
+        width: 87vw;
+        height: 40vh;
+        grid-template-rows: 10% 20% 60% 10%;
+    }
+    .Person-rooms{
+        align-items: start;
+        justify-content: center;
+    }
+    .optionsText, .optionCouterButton, .optionCouterNumber{
+        color: #bfbfbf;
+        font-size: 4vw
+    }
+    .ProcessFurther button{
+        padding: 3% 6%;
+        font-size: 3vw;
+        background-color: rgb(242, 75, 103);
+        border-radius: 10px;
+        color: white;
+    }
+}

@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bodydivSignup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 99;
+  backdrop-filter: grayscale(1) blur(1px);
+}
+      .mainContainerSignup{
+        width: 22%;
+        height: 35%;
+        display: flex;
+      }
+      .containerdivSignup {
+        display: flex;
+        width: 100%;
+        padding: 10%;
+        padding-top: 7%;
+        background-color: #fff;
+        grid-template-columns: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      label {
+
+        display: flex;
+        margin-bottom: 1%;
+        justify-content: flex-start;
+        font-size: 1vw;
+        font-weight: 600;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],input[type="password"] {
+        width: 100%;
+        padding: 1.2%;
+        margin-bottom: 6%;
+        border: 2px solid #f26b7474;
+        border-radius: 5px;
+        font-size: 1vw;
+      }
+      
+      .SignupBtnDiv {
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        background-color: #f55762;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1vw;
+      }
+
+      .DontHaveAccountLink{
+        text-decoration: underline;
+        font-size: 0.8vw;
+      }
+      @media (max-width:1200px) {
+        .mainContainerSignup{
+          width: 50%;
+          height: 40%;
+        }
+      }
+      @media (max-width:600px) {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],input[type="password"] {
+          width: 100%;
+          padding: 1.2%;
+          margin-bottom: 6%;
+          border: 2px solid #f26b7474;
+          border-radius: 5px;
+          font-size: 3.5vw;
+        }
+        .bodydivSignup{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 90vh;
+        }
+        .mainContainerSignup{
+          width: 72%;
+          height: 31%;
+        }
+        .DontHaveAccountLink{
+          font-size: 2.8vw;
+        }
+        input[type="submit"] {
+          font-size: 3vw;
+        }
+        label{
+          font-size: 2.5vw;
+        }
+        .SignupBtnDiv {
+          width: 100%;
+          padding-top: 2%;
+          padding-bottom: 2%;
+          background-color: #f55762;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 4vw;
+        }
+        .containerdivSignup {
+          display: flex;
+          width: 100%;
+          padding: 10%;
+          padding-top: 6%;
+        }
+      }

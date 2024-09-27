@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    .body{
+        display: flex;
+    }
+    .landingHotel{
+        background-color: white;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 12% 14% 74%;
+        width: 100%;
+        padding: 5%;
+    }
+    .Heading-available-Rooms{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Search-room{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .Heading-available-Rooms p{
+        font-size: 3.5vw;
+        font-weight: bold;
+    }
+    .main-row-search-1{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        height: 50%;
+        grid-template-columns: 40% 40% 20%;
+        align-items: center;
+        width: 40%;
+        border-radius: 5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .main-col1-1, .main-col2-1, .main-col3-1{
+        height: 100%;
+        width: 100%;
+        border: 1px solid rgb(220, 220, 220);
+    }
+    .main-col1-1, .main-col2-1{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+    .maxLimit, .minLimit{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-top: 20%;
+    }
+    .main-col3-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-col3-1 button{
+        background-color: rgb(242, 75, 103);
+        color: white;
+        width: 100%;
+        height: 100%;
+        font-size: 1.3vw;
+    }
+    .main-col1-1 input, .main-col2-1 input{
+        overflow: hidden;
+        height: 100%;
+        font-size: 1.3vw;
+        border: none;
+        width: 100%;
+    }
+
+    .hotelContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    }
+    .hotelWrapper{
+        border-radius: 15px;
+        height: 65%;
+        width: 100%;
+        max-width: 20%;
+        display: grid;
+        grid-template-rows:  55% 45%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+.hotelImage{
+    grid-template-rows: 80% 20%;
+    display: grid;
+    border-radius: 5px;
+}
+.MainHotelImage{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.MainHotelImage img{
+    object-fit: cover;
+}
+.hotelImagePreview{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: start;
+    align-items: center;
+    gap: 2%;
+}
+.ImagePreviewContainer{
+    height: 100%;
+    width: 17%;
+    border-radius: 5px;
+}
+.ImagePreviewContainer img{
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.hotelDetails{
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.hotelAddress{
+    font-weight: bolder;
+}
+.hotelDetailsTexts{
+font-size: 1vw;
+}
+.hotelDetailsPrice button{
+    font-size: 1vw;
+    font-weight: 600;
+    background-color: rgb(242, 75, 103);
+    color: white;
+      }
+      .hotelDetailsPrice button:active{
+        font-size: 1vw;
+        font-weight: 600;
+        background-color: rgb(244, 67, 96);
+        color: white;
+          }
+          .hotelDetailsPrice button:hover{
+            font-size: 1vw;
+            font-weight: 600;
+            background-color: rgb(242, 48, 80);
+            color: white;
+              }
+            
+.showImage{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    padding: 5%;
+    padding-top: 7%;
+    backdrop-filter: blur(2px);
+    background-color: none;
+}
+.showImage img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+.CloseBtnImage{
+    display: flex;
+    top: 11%;
+    color: rgb(242, 75, 103);
+    right: 3.5%;
+    position: fixed;
+    z-index: 9999999;
+    font-size: 1.5vw; 
+    padding: 0.6% 0.8%;
+    border-radius: 50%;
+    background-color: black;
+}
+.reserveButton{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    }
+     .removeRoomBtn{
+           padding: 1% 7%;
+           font-size: 1vw;
+           font-weight: 600;
+           background-color: rgb(242, 75, 103);
+           border-radius: 10px;
+           color: white;
+    }
+    .selectRoomBtn{
+        padding: 1% 7%;
+        font-size: 1vw;
+        font-weight: 600;
+        background-color: rgb(67, 237, 146);
+        border-radius: 10px;
+        color: white;
+ }
+.NoRoomsAvailable{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+.HeadingNoAvailableRooms{
+    padding-top: 10%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.HeadingNoAvailableRooms p{
+    font-size: 4vw;
+    font-weight: bold;
+    color: black;
+}
+input:focus{
+    outline: none;
+}
+    @media (max-width: 600px) {
+        .NoRoomsAvailable{
+            height: 90vh;
+            display: flex;
+            width: 100%;
+        }
+        .HeadingNoAvailableRooms{
+            padding-top: 25%;
+        }
+        .HeadingNoAvailableRooms p{
+            font-size: 6vw;
+            font-weight: bold;
+            color: black;
+        }
+        .main-col1-1, .main-col2-1{
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .minLimit, .maxLimit{
+            justify-content: center;
+            align-items: end;
+            padding-top: 14%;
+        }
+        .Heading-available-Rooms{
+            align-items: end;
+            padding: 0;
+        }
+        .Heading-available-Rooms p{
+            font-size: 9vw;
+            font-weight: bold;
+        }
+        .CloseBtnImage{
+            display: flex;
+            top: 33%;
+            color: rgb(242, 75, 103);
+            right: 3.2%;
+            position: fixed;
+            z-index: 9999999;
+            font-size: 6vw; 
+            padding: 1% 1.4%;
+        }
+        .showImage{
+            height: 50vh;
+            width: 100%;
+            position: fixed;
+            padding: 5%;
+            backdrop-filter: blur(2px);
+            background-color: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .showImage img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+              margin-top: 80%;
+        }
+.Heading-available-Rooms{
+    height: 100%;
+}
+.Search-room{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    align-items: end;
+    display: flex;
+    justify-content: center;
+}
+.main-row-search-1{
+    height: 60%;
+    width: 90%;
+    border: none;
+    }
+    .main-col1-1, .main-col2-1{
+       display: flex;
+        height: 100%;
+        width: 100%;
+        border: 1px solid rgb(220, 220, 220);
+    }
+    .main-col1-1 input, .main-col2-1 input{
+        font-size: 3vw;
+        border: none;
+    }
+    .main-col3-1 button{
+    font-size: 2vw;
+    border: none;
+    }
+    .col-sm{
+        margin-bottom: 20px;
+    }
+        .main-row-search-1{
+    box-shadow: none;
+        }
+        .limitHeading{
+            font-size: 3vw;
+        }
+        .hotelContainer{
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            gap: 2%;
+            flex-direction: column;
+            padding-top: 15%;
+            }
+            input:focus{
+                outline: none;
+            }
+        .landingHotel{
+            margin-top: 7vh;
+            height: 100%;
+            grid-template-rows: 8% 5% 87%;
+            background-color: white;
+            display: grid;
+            align-items: start;
+            width: 100%;
+            gap: 0;
+        }
+        .hotelWrapper{
+            border-radius: 15px;
+            height: 85%;
+            max-height: 100%;
+            width: 100%;
+            max-width: 90%;
+            display: grid;
+            grid-template-rows: 63% 37%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .hotelImage{
+            width: 100%;
+            height: 100%;
+        }
+        .hotelDetailsTexts{
+            font-size: 3.4vw;
+            }
+        .hotelAddress{
+            font-weight: bolder;
+            font-size: 4.2vw;
+        }
+            .hotelDetails{
+                display: flex;
+                flex-direction: column;
+                gap: 5%;
+                padding-top: 1%;
+                padding-bottom: 5%;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            .hotelDetailsPrice button{
+          font-size: 3.4vw;
+          font-weight: 600;
+          background-color: rgb(242, 75, 103);
+          color: white;
+            }
+            .reserveButton{
+                width: 70%;
+                height: 60%;
+                display: flex;
+                justify-content: space-between;
+                }
+                .removeRoomBtn{
+                       padding: 2% 7%;
+                       font-size: 4vw;
+                       font-weight: 600;
+                       background-color: rgb(242, 75, 103);
+                       border-radius: 10px;
+                       color: white;
+                }
+                .selectRoomBtn{
+                    padding: 2% 7%;
+                    font-size: 4vw;
+                    font-weight: 600;
+                    background-color: rgb(67, 237, 146);
+                    border-radius: 10px;
+                    color: white;
+             }
+                .hotelDetails{
+                    padding-bottom: 3%;
+                }
+    }
