@@ -1,12 +1,12 @@
-#Hotel Reservation System
+# Hotel Reservation System
 ![image](https://github.com/user-attachments/assets/5eb8245b-1d0e-460f-aa7e-06a8b2f1dfe7)
 ![image](https://github.com/user-attachments/assets/c2b5aff2-8f4e-4a38-ba70-11458bacf92f)
 
-##Overview
+## Overview
 
 This is a Full Stack Hotel Reservation System built using the MERN stack (MongoDB, Express.js, React.js, Node.js) with Bootstrap for responsive design, Razorpay for payment processing, and Nodemailer for email communication. The system allows users to search and book hotels, manage reservations, and make secure payments.
 
-##Features
+## Features
 
 - Hotel Search and Booking: Users can browse available hotels and book their stay.
 
@@ -20,9 +20,9 @@ This is a Full Stack Hotel Reservation System built using the MERN stack (MongoD
 
 - Responsive Design: Fully responsive layout using Bootstrap, ensuring a seamless experience across devices.
 
-##Tech Stack
+## Tech Stack
 
-###Frontend
+### Frontend
 
 - React.js
 
@@ -30,7 +30,7 @@ This is a Full Stack Hotel Reservation System built using the MERN stack (MongoD
 
 - Axios (for API requests)
 
-###Backend
+### Backend
 
 - Node.js
 
@@ -38,7 +38,7 @@ This is a Full Stack Hotel Reservation System built using the MERN stack (MongoD
 
 - MongoDB (Database)
 
-###Additional Libraries/Services
+### Additional Libraries/Services
 
 - bcrypt.js: For password hashing.
 
@@ -46,22 +46,22 @@ This is a Full Stack Hotel Reservation System built using the MERN stack (MongoD
 
 - Razorpay: Payment gateway integration.
 
-##Installation and Setup
+## Installation and Setup
 
-###Prerequisites
+### Prerequisites
 
 - Node.js (v14 or higher)
 
 - MongoDB (local or cloud-based)
 
-##Steps to Run the Project
+## Steps to Run the Project
 
-- ##Clone the repository:
+- ## Clone the repository:
 
 ```git clone <repository_url>```
 ```cd hotel-reservation-system```
 
-- ##Install dependencies:
+- ## Install dependencies:
 
 For backend:
 
@@ -70,31 +70,31 @@ For backend:
 
 For frontend:
 
-```cd frontend```
-```npm install```
+``cd frontend
+npm install``
 
 Set up environment variables:
 Create a .env file in the backend folder and configure the following:
 
-```PORT=5000```
-```MONGO_URI=<your_mongodb_connection_string>```
-```JWT_SECRET=<your_jwt_secret>```
-```RAZORPAY_KEY_ID=<your_razorpay_key_id>```
-```RAZORPAY_KEY_SECRET=<your_razorpay_key_secret>```
-```EMAIL_HOST=<smtp_host>```
-```EMAIL_PORT=<smtp_port>```
-```EMAIL_USER=<your_email>```
-```EMAIL_PASS=<your_email_password>```
+``PORT=5000
+MONGO_URI=<your_mongodb_connection_string>
+JWT_SECRET=<your_jwt_secret>
+RAZORPAY_KEY_ID=<your_razorpay_key_id>
+RAZORPAY_KEY_SECRET=<your_razorpay_key_secret>
+EMAIL_HOST=<smtp_host>
+EMAIL_PORT=<smtp_port>
+EMAIL_USER=<your_email>
+EMAIL_PASS=<your_email_password>``
 
 Run the server:
 
-```cd backend```
-```npm start```
+``cd backend
+npm start``
 
 Run the frontend:
 
-```cd frontend```
-```npm start```
+``cd frontend
+npm start``
 
 Access the application:
 Open your browser and go to http://localhost:3000.
